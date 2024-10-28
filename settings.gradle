@@ -1,0 +1,13 @@
+// settings.gradle
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+    }
+    versionCatalogs {
+        create("testLibs") {  // Only create "libs" once
+            from(files("${rootDir}/gradle/libs.versions.toml"))  // Only one from() call here
+        }
+    }
+}
+rootProject.name = 'my-gradle-project'
