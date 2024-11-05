@@ -6,7 +6,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("testLibs") {  // Only create "libs" once
-            from(files("${rootDir}/gradle/libs.versions.toml"))  // Only one from() call here
+            from(files("${rootDir}/gradle/libs.versions.one.toml"))  // Only one from() call here
         }
     }
 }
