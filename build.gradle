@@ -12,6 +12,12 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 // apply plugin: 'org.jetbrains.kotlin.jvm'
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
 group = 'com.endor.mygradleproject'
 version = '1.0'
 description = 'Sample gradle projep'
